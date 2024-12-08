@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    box-sizing: border-box; 
+}
+
+/* Resume Container Styling */
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;  
+    background-color: rgb(236, 184, 219);
+    width: 80%;
+    max-width: 1200px;  
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(64, 186, 216, 0.404);
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #ffffff;
+    color: white;
+    padding: 5px 10px;
+    width: 25%;
+    text-align: center;
+    border-right: 5px solid #000000;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    margin-top: 10%;
+    border-radius: 30%;
+    border: 5px solid #050505;
+    margin-bottom: 50px;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 30px 20px;
+    width: 65%;
+}
+
+.info-box {
+    margin-bottom: 20px; /* Added spacing between sections */
+    
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(212, 129, 129, 0.1);
+}
+
+/* Skills Button Styling */
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px; 
+    background-color: #f0f0f0;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff737c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;  
+        width: 90%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;  
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+        margin-top: 5%;
+    }
+}
